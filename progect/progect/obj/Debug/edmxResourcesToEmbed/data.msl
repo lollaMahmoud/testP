@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DesktopModelStoreContainer" CdmEntityContainer="DesktopEntities">
+    <EntitySetMapping Name="admen">
+      <EntityTypeMapping TypeName="DesktopModel.adman">
+        <MappingFragment StoreEntitySet="admen">
+          <ScalarProperty Name="AID" ColumnName="AID" />
+          <ScalarProperty Name="Anane" ColumnName="Anane" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="useres">
+      <EntityTypeMapping TypeName="DesktopModel.usere">
+        <MappingFragment StoreEntitySet="usere">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="uname" ColumnName="uname" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="phon" ColumnName="phon" />
+          <ScalarProperty Name="city" ColumnName="city" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,21 @@
+create table usere
+(
+id int identity primary key,
+uname varchar(60),
+Pass varchar(60) , 
+age varchar(60), 
+gender varchar(60),
+phon varchar(60), 
+city varchar(60)
+
+);
+
+
+
+
+create table admen
+(
+AID int identity primary key,
+Anane varchar(60),
+Pass varchar(60)
+);

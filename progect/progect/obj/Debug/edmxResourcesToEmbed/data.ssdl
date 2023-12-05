@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DesktopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="admen">
+    <Key>
+      <PropertyRef Name="AID" />
+    </Key>
+    <Property Name="AID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Anane" Type="varchar" MaxLength="60" />
+    <Property Name="Pass" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="usere">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uname" Type="varchar" MaxLength="60" />
+    <Property Name="Pass" Type="varchar" MaxLength="60" />
+    <Property Name="age" Type="varchar" MaxLength="60" />
+    <Property Name="gender" Type="varchar" MaxLength="60" />
+    <Property Name="phon" Type="varchar" MaxLength="60" />
+    <Property Name="city" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityContainer Name="DesktopModelStoreContainer">
+    <EntitySet Name="admen" EntityType="Self.admen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usere" EntityType="Self.usere" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
